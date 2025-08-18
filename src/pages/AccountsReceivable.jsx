@@ -1203,3 +1203,5 @@ const AccountsReceivable = () => {
 };
 
 export default AccountsReceivable;
+
+
