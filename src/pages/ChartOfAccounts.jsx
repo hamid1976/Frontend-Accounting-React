@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus } from 'lucide-react';
-import { useAccounts } from '../ChartsOfAccountsHook/useAccounts';
-import { useToast } from '../ChartsOfAccountsHook/useToast';
+import { useAccounts } from '../components/ChartOfAccounts/ChartsOfAccountsHook/useAccounts';
+import { useToast } from '../components/ChartOfAccounts/ChartsOfAccountsHook/useToast';
 import COAHeader from '../components/ChartOfAccounts/COAHeader';
 import COAControls from '../components/ChartOfAccounts/COAControls';
 import COAAccountForm from '../components/ChartOfAccounts/COAAccountForm';
@@ -11,8 +11,8 @@ import COAAPIStatus from '../components/ChartOfAccounts/COAAPIStatus';
 import ConfirmationDialog from '../components/common/ConfirmationDialog';
 import ToastContainer from '../components/common/ToastContainer';
 import ErrorMessage from '../components/common/ErrorMessage';
-import { accountTypes } from '../ChartsOfAccountUtils/accountConfig';
-import { buildHierarchy, flattenAccounts, getFilteredAccounts } from '../ChartsOfAccountUtils/accountHelpers';
+import { accountTypes } from '../components/ChartOfAccounts/ChartsOfAccountUtils/accountConfig';
+import { buildHierarchy, flattenAccounts, getFilteredAccounts } from '../components/ChartOfAccounts/ChartsOfAccountUtils/accountHelpers';
 
 const ChartOfAccounts = () => {
   const [expandedNodes, setExpandedNodes] = useState(new Set());

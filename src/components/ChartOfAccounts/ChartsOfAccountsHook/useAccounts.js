@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { API_BASE_URL } from '../utils/apiConfig';
+import { API_BASE_URL } from '../../../utils/apiConfig';
 
 export const useAccounts = (showToast) => {
   const [accounts, setAccounts] = useState([]);

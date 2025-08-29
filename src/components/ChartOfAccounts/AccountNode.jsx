@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronDown, ChevronRight, Plus, Edit, Trash2 } from 'lucide-react';
-import { accountTypes } from '../../ChartsOfAccountUtils/accountConfig';
+import { accountTypes } from '../ChartOfAccounts/ChartsOfAccountUtils/accountConfig';
 
 const AccountNode = ({
   account,
